@@ -39,6 +39,7 @@ h2 {
 p {
    color: white
    font-family: arial;
+   text-shadow: 2px 2px 4px green;
    font-size: 150%;
    text-align:center;
 }
