@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="file:///E:/LEPATAN/CEC.txt" href="file:///E:/LEPATAN/quizwst.html">
+</head>
+<body>
+
+
+</body>
+</html>
