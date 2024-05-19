@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+body{
+    background: linear-gradient(to bottom right, #FFFFFF, #A7D2FF);
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #063970;
+}
+.nav-links{
+    position: absolute;
+    right: 100px;
+    top: 21px;
+    font-size: 24px;
+}
+.nav-links li{
+    text-align: top;
+    padding-top: 12px;
+    display:inline-block;  
+    font-family: "Poppins", sans-serif;
+    font-weight: 480;
+    font-style: normal;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+    font-weight: 520;
+}
+
+.Logo a img{
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+.Logo{
+    height: 100px;
+    color: white;
+    text-align: left;
+    background-position: top;
+    padding-top: 1px;
+    padding-left: 13px;
+}
+
+.std-btn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.std-btn:hover, .std-btn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.student {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: black;
+  min-width: 500px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+

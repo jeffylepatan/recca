@@ -1,0 +1,172 @@
+body{
+    background: linear-gradient(to bottom right, #FFFFFF, #A7D2FF);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.Info h1{
+    color: #063970 ;
+    top: 10px;
+    left: 35px;
+    font-size: 70px;
+    padding-top: 25px;
+    padding-left: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+    position: absolute;
+    top: 60px;
+}
+
+.Info h2{
+    color: #063970 ;
+    font-size: 70px;
+    top: 150px;
+    left: 35px;
+    padding-left: 50px;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+}
+
+.Info h3{
+    color: #063970 ;
+    font-size: 30px;
+    top: 270px;
+    left: 35px;
+    padding-left: 52px;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 430;
+    font-style: normal;
+}
+
+.SIGNUP{
+    background-color: #063970;
+    width: 35%;
+    height: 75%;
+    position: absolute;
+    top: 90px;
+    border-radius: 45px;
+    left: 60%;
+ }
+
+.toggle-btn:hover {
+    background-color: #f0f0f0;
+}
+.selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+
+ .SIGNUP h4 {
+    color: #FFFFFF;
+    font-size: 28px;
+    margin-left: 25%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+ }
+
+.FORM form{
+    margin-top: 20px;
+}
+ .fname{
+    height: 40px;
+    width: 180px;
+    margin-left: 11%;
+    color: black;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+ }
+ 
+ .lname{
+    height: 40px;
+    width: 180px;
+    margin-left: 1%;
+    color: black;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+ }
+ 
+ .email{
+    height: 40px;
+    width: 377px;
+    margin-left: 11%;
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+ }
+
+ .id{
+    height: 40px;
+    width: 377px;
+    margin-left: 11%;
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+ }
+
+ .password{
+    height: 40px;
+    width: 377px;
+    margin-left: 11%;
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+ }
+
+ .confirmpass{
+    height: 40px;
+    width: 377px;
+    margin-left: 11%;
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+ }
+
+ .SUBMIT{
+    position: absolute;
+    height: 50px;
+    width: 120px;
+    left: 35%;
+    margin-top: 20px;
+    background: radial-gradient(circle at 50% 50%, #FFFFFF, #A7D2FF);
+    border-radius: 20px;
+    color: #063970;
+    border-color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 480;
+    font-style: normal;
+ }
+
+ .Account {
+    margin-top: 77px;
+    color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 380;
+    font-style: normal;
+    margin-left: 20%;
+ }
+ 
+ .Account a{
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 380;
+    font-style: normal;
+ }
+ 

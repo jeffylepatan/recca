@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:wght@100&display=swap');
+
+body {
+    background: linear-gradient(to bottom right, #FFFFFF, #A7D2FF);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #063970;
+}
+
+.nav-links {
+    position: absolute;
+    right: 100px;
+    top: 21px;
+    font-size: 24px;
+}
+
+.nav-links li {
+    text-align: top;
+    padding-top: 12px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 480;
+    font-style: normal;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+    font-weight: 520;
+}
+
+.Logo a img {
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+.Logo {
+    height: 100px;
+    color: white;
+    text-align: left;
+    background-position: top;
+    padding-top: 1px;
+    padding-left: 13px;
+}
+
+.circular-button{
+  width: 120px;
+  height: 35px;
+  border-radius: 20px; 
+  background-color: #FFFFFF;
+  border: none;
+  font-size: 20px; 
+  cursor: pointer; 
+  outline: none; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 520;
+  font-style: normal;
+  bottom: 3px;  
+  position: relative;
+  color: #063970;
+}
+
+:root {
+    --border-color: #cccccc;
+    --background-color: #f1f1f1;
+    --transition: all 0.2s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.04em;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1000px;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+}
+.accordion-item-header{
+  height: 130px;
+  color: #FFFFFF;
+  background-color: #063970;
+  font-size: 50px;
+}
+
+.accordion .accordion-item {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion .accordion-item .accordion-item-description-wrapper {
+    max-height: 0;
+    height: 250px;
+    background-color: #063970;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion .accordion-item.open .accordion-item-description-wrapper {
+    max-height: 1000px; /* A high value to accommodate the content */
+}
+
+.accordion-item-description img {
+    height: 200px;
+    margin-top: 10px;
+}
+
+.accordion .accordion-item .accordion-item-description-wrapper hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    visibility: hidden;
+}
+
+.accordion .accordion-item.open .accordion-item-description-wrapper hr {
+    visibility: visible;
+}
+
+.accordion .accordion-item .accordion-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion .accordion-item .accordion-item-header .accordion-item-header-staff{
+  margin-left: 280px;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.accordion .accordion-item .accordion-item-header .accordion-item-header-title {
+    font-weight: 500;
+    margin-left: 255px;
+    
+}
+
+.accordion .accordion-item .accordion-item-header .accordion-item-header-icon {
+    transition: var(--transition);
+}
+
+.accordion .accordion-item.open .accordion-item-header .accordion-item-header-icon {
+    transform: rotate(-180deg);
+}
+
+.accordion .accordion-item .accordion-item-description-wrapper .accordion-item-description {
+    min-height: 0;
+    padding: 10px;
+    line-height: 1.5;
+    visibility: hidden;
+}
+
+.accordion .accordion-item.open .accordion-item-description-wrapper .accordion-item-description {
+    visibility: visible;
+}
+
+.zoomed-image {
+    display: block;
+    height: auto;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 150px;
+}
+
+.zoomed {
+    transform: scale(2); /* Zoom in 2x */
+    transform-origin: center center; /* Zoom from the center */
+    z-index: 9999;
+    background: #f1f1f1;
+    background-size: 150px;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoom Picture</title>
+  <link rel="stylesheet" href="hahaha.css">
+</head>
+<body>
+
+<div class="container">
+  <button onclick="toggleZoom()">
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image" id="zoomedImage">
+  </button>
+  <div class="info" id="info">
+    <p>This is some information about the picture.</p>
+  </div>
+</div>
+
+</body>
+</html>
+<script>
+function toggleZoom() {
+    var zoomedImage = document.getElementById("zoomedImage");
+    var container = document.querySelector(".container");
+    var info = document.getElementById("info");
+  
+    zoomedImage.classList.toggle("zoomed");
+    info.classList.toggle("show");
+  
+    if (zoomedImage.classList.contains("zoomed")) {
+      container.style.backgroundColor = "aquamarine";
+    } else {
+      container.style.backgroundColor = "";
+    }
+  }
+  </script>

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+body{
+    background: linear-gradient(to bottom right, #FFFFFF, #A7D2FF);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+nav {
+    background-color: #063970;
+}
+.nav-links{
+    position: absolute;
+    right: 100px;
+    top: 21px;
+    font-size: 24px;
+}
+.nav-links li{
+    text-align: top;
+    padding-top: 12px;
+    display:inline-block;  
+    font-family: "Poppins", sans-serif;
+    font-weight: 480;
+    font-style: normal;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+    font-weight: 520;
+}
+
+.Logo a img{
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+.Logo{
+    height: 100px;
+    color: white;
+    text-align: left;
+    background-position: top;
+    padding-top: 1px;
+    padding-left: 13px;
+}
+.circular-button{
+            width: 120px;
+            height: 40px;
+            border-radius: 20px; 
+            background-color: #FFFFFF;
+            border: none;
+            font-size: 20px; 
+            cursor: pointer; 
+            outline: none; 
+            font-family: "Poppins", sans-serif;
+            font-weight: 520;
+            font-style: normal;
+            bottom: 3px;  
+            position: relative;
+            color: #063970;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background: linear-gradient(to bottom right, #FFFFFF, #A7D2FF); 
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+
+ }
+ 
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown-content a:hover {background-color: #f1f1f1}
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+   
+ }
+ 
+ .dropdown:hover .dropbtn {
+   background-color: #063970;
+   transition: .5s;
+ }
+
+
+.nav-links a button{
+   color: #063970;
+}
+.Info h1{
+    color: #063970 ;
+    left: 35px;
+    font-size: 70px;
+    padding-top: 25px;
+    padding-left: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+    position: absolute;
+    top: 68px;
+}
+
+.Info h2{
+    color: #063970 ;
+    font-size: 70px;
+    top: 155px;
+    left: 35px;
+    padding-left: 50px;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+}
+
+.Info h3{
+    color: #063970 ;
+    font-size: 30px;
+    top: 273px;
+    left: 35px;
+    padding-left: 52px;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 430;
+    font-style: normal;
+
+}
+ .Info p {
+    color: #063970 ;
+    font-size: 22px;
+    top: 40px;
+    left: 0;
+    width: 500px;
+    padding-left: 53px;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+ }
+
+.images1 img {
+   position: absolute;
+   width: 290px;
+   height: 180px;
+   border-radius: 15px;
+   bottom: 440px;
+   left: 148px;
+   margin-left: 550px;
+}
+
+.images2  img {
+   position: absolute;
+   width: 180px;
+   height: 230px;
+   border-radius: 15px;
+   bottom: 193px;
+   left: 150px;
+   margin-left: 550px;
+}
+
+.images3 img {
+   position: absolute;
+   width: 220px;
+   height: 230px;
+   border-radius: 15px;
+   bottom: 193px;
+   left: 261px;
+   margin-left: 631px;
+}
+
+.images4  img {
+   position: absolute;
+   width: 130px;
+   height: 180px;
+   border-radius: 15px;
+   bottom: 440px;
+   left: 440px;
+   margin-left: 560px;
+}
+
+.images5 img {
+   position: absolute;
+   width: 200px;
+   height: 230px;
+   border-radius: 15px;
+   bottom: 193px;
+   left: 1125px;
+}
+
+.images6 img {
+   position: absolute;
+   height: 180px;
+   width: 180px;
+   border-radius: 15px;
+   bottom: 440px;
+   left: 1142px;
+}

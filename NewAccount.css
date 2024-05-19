@@ -1,0 +1,74 @@
+body{
+    background: linear-gradient(to bottom right, #FFFFFF, #A7D2FF);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.Info h1{
+    color: #063970 ;
+    top: 10px;
+    left: 35px;
+    font-size: 70px;
+    padding-top: 25px;
+    padding-left: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+    position: absolute;
+    top: 60px;
+}
+
+.Info h2{
+    color: #063970 ;
+    font-size: 70px;
+    top: 150px;
+    left: 35px;
+    padding-left: 50px;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+}
+
+.Info h3{
+    color: #063970 ;
+    font-size: 30px;
+    top: 270px;
+    left: 35px;
+    padding-left: 52px;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 430;
+    font-style: normal;
+}
+
+.SIGNUP{
+    background-color: #063970;
+    width: 35%;
+    height: 70%;
+    position: absolute;
+    top: 120px;
+    border-radius: 45px;
+ }
+
+.toggle-btn:hover {
+    background-color: #f0f0f0;
+}
+.selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+ .SIGNUP h4 {
+    color: #FFFFFF;
+    font-size: 25px;
+ }
+
+ .SIGNUP FORM form {
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+}
+

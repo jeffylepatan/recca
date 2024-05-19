@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title> CEBU EASTERN COLLEGE ONLINE MATERIAL CENTER </title>
+        <link rel="stylesheet" href="NewAccount.css">
+            <style>
+             @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+            </style>
+
+<body>      
+    <div class="Info">
+        <h1>CEBU EASTERN</h1>
+        <h2>COLLEGE</h2>
+        <h3>ONLINE MATERIAL CENTER</br>
+    </div>
+    <div class="SIGNUP">      
+        <h4>CREATE ACCOUNT</h4>         
+        <div id="role-selection">
+            <button class="toggle-btn" onclick="toggleRole(this)">Student</button>
+            <button class="toggle-btn" onclick="toggleRole(this)">Teacher</button>
+            <button class="toggle-btn" onclick="toggleRole(this)">Staff</button>
+        </div>
+      </div>
+      <form class="CREATEACC">       
+        <input type="text" class="fname" name="firstname" placeholder="FIRST NAME" required="" autofocus="" />
+        <input type="text" class="lname" name="lastname" placeholder="LAST NAME" required="" autofocus=""/><br>      
+        <input type="text" class="email" name="emailnum" placeholder="EMAIL OR PHONE NUMBER" required="" autofocus=""/><br>      
+        <input type="text" class="id" name="idnum" placeholder="ID NUMBER" required="" autofocus=""/><br>      
+        <input type="password" class="password" name="password" placeholder="PASSWORD" required=""/><br>
+        <input type="password" class="confirmpass" name="conpass" placeholder="CONFIRM PASSWORD" required="" autofocus=""/><br>                 
+        <button class="SUBMIT" type="submit">SUBMIT</button>
+        <p>Already have an account?<p>LOGIN</p></p>
+      </form>
+</div>
+
+<script>
+    function toggleRole(button) {
+        var buttons = document.querySelectorAll('.toggle-btn');
+        buttons.forEach(function(btn) {
+            if (btn === button) {
+                btn.classList.toggle('selected');
+            } else {
+                btn.classList.remove('selected');
+            }
+        });
+    }
+</script>
+
+</head>
+</body>

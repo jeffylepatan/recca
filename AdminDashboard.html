@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom right, #FFFFFF, #A7D2FF);
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    
+    .navbar {
+        background-color: #063970;
+        color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar h1 {
+        margin: 0;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav-links li {
+        display: inline;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .main {
+        padding: 20px;
+    }
+    
+    .section {
+        background: linear-gradient(to bottom right, #FFFFFF, #A7D2FF);
+        margin: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    h2 {
+        margin-top: 0;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    
+    table, th, td {
+        border: 1px solid #ddd;
+
+    }
+    
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    
+    th {
+        background: #A7D2FF;
+    }
+</style>    
+<body>
+    <nav class="navbar">
+        <h1>Admin Dashboard</h1>
+        <ul class="nav-links">
+            <li><a href="#accounts" class="nav-link">Accounts</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#inventory" class="nav-link">Inventory</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="accounts" class="section">
+            <h2>Accounts</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody id="accountsTableBody">
+                    <!-- Accounts will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="products" class="section hidden">
+            <h2>Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="productsTableBody">
+                    <!-- Products will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="inventory" class="section hidden">
+            <h2>Inventory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Size</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryTableBody">
+                    <!-- Inventory will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const accountsTableBody = document.getElementById('accountsTableBody');
+        const productsTableBody = document.getElementById('productsTableBody');
+        const inventoryTableBody = document.getElementById('inventoryTableBody');
+
+        const accounts = [
+            { id: 1234567, name: 'admin', email: 'joAdmin123@gmail.com', password: 'Admin12345' },
+            { id: 2210296, name: 'Faith Del Mar', email: 'Faithdelmar@gmail.com', password: 'Secret123' },
+            { id: 2210700, name: 'Recca Lepatan', email: 'reccalepatan@gmail.com', password: 'Uppercase' },
+            { id: 2210310, name: 'Anthony Mendoza', email: 'mendozaony@gmail.com', password: 'Hatdog123' },
+            { id: 2210690, name: 'Chrissa Ababa', email: 'chrissamayababa@gmail.com', password: 'Chrissamay' },
+        ];
+
+        const products = [
+            { id: 1, name: 'Student Top Uniform', price: '$450' },
+            { id: 2, name: 'Student Slacks', price: '$250' },
+            { id: 3, name: 'PE Top Attire', price: '200' },
+            { id: 4, name: 'PE Pants', price: '350' },
+            { id: 5, name: 'Teacher Top Uniform', price: '$650' },
+            { id: 6, name: 'Teacher Slacks', price: '$350' },
+            { id: 7, name: 'Staff Top Uniform', price: '$350' },
+            { id: 8, name: 'Staff Slacks', price: '$250' },
+            { id: 9, name: 'ID Lace', price: '$100' },
+        ];
+
+        const inventory = [
+            { id: 1, productName: 'Student Top Uniform', quantity: 100, size: 'S' },
+            { id: 2, productName: 'Student Top Uniform', quantity: 100, size: 'M' },
+            { id: 3, productName: 'Student Top Uniform', quantity: 100, size: 'L' },
+            { id: 4, productName: 'Student Top Uniform', quantity: 100, size: 'XL' },
+            { id: 5, productName: 'Student Top Uniform', quantity: 100, size: 'XXL' },
+            { id: 6, productName: 'Student Top Uniform', quantity: 100, size: 'XXXL' },
+            { id: 7, productName: 'Student Slacks', quantity: 100, size: 'S' },
+            { id: 8, productName: 'Student Slacks', quantity: 100, size: 'M' },
+            { id: 9, productName: 'Student Slacks', quantity: 100, size: 'L' },
+            { id: 10, productName: 'Student Slacks', quantity: 100, size: 'XL' },
+            { id: 11, productName: 'Student Slacks', quantity: 100, size: 'XXL' },
+            { id: 12, productName: 'Student Slacks', quantity: 100, size: 'XXXL' },
+            { id: 13, productName: 'PE Top Attire', quantity: 100, size: 'S' },
+            { id: 14, productName: 'PE Top Attire', quantity: 100, size: 'M' },
+            { id: 15, productName: 'PE Top Attire', quantity: 100, size: 'L' },
+            { id: 16, productName: 'PE Top Attire', quantity: 100, size: 'XL' },
+            { id: 17, productName: 'PE Top Attire', quantity: 100, size: 'XXL' },
+            { id: 18, productName: 'PE Top Attire', quantity: 100, size: 'XXXL' },
+            { id: 19, productName: 'PE Pants', quantity: 100, size: 'S' },
+            { id: 20, productName: 'PE Pants', quantity: 100, size: 'M' },
+            { id: 21, productName: 'PE Pants', quantity: 100, size: 'L' },
+            { id: 22, productName: 'PE Pants', quantity: 100, size: 'XL' },
+            { id: 23, productName: 'PE Pants', quantity: 100, size: 'XXL' },
+            { id: 24, productName: 'PE Pants', quantity: 100, size: 'XXXL' },
+            { id: 25, productName: 'Teacher Top Uniform', quantity: 100, size: 'S' },
+            { id: 26, productName: 'Teacher Top Uniform', quantity: 100, size: 'M' },
+            { id: 27, productName: 'Teacher Top Uniform', quantity: 100, size: 'L' },
+            { id: 28, productName: 'Teacher Top Uniform', quantity: 100, size: 'XL' },
+            { id: 29, productName: 'Teacher Top Uniform', quantity: 100, size: 'XXL' },
+            { id: 30, productName: 'Teacher Top Uniform', quantity: 100, size: 'XXXL' },
+            { id: 31, productName: 'Teacher Slacks', quantity: 100, size: 'S' },
+            { id: 32, productName: 'Teacher Slacks', quantity: 100, size: 'M' },
+            { id: 33, productName: 'Teacher Slacks', quantity: 100, size: 'L' },
+            { id: 34, productName: 'Teacher Slacks', quantity: 100, size: 'XL' },
+            { id: 35, productName: 'Teacher Slacks', quantity: 100, size: 'XXL' },
+            { id: 36, productName: 'Teacher Slacks', quantity: 100, size: 'XXXL' },
+            { id: 37, productName: 'Staff Top Uniform', quantity: 100, size: 'S' },
+            { id: 38, productName: 'Staff Top Uniform', quantity: 100, size: 'M' },
+            { id: 39, productName: 'Staff Top Uniform', quantity: 100, size: 'L' },
+            { id: 40, productName: 'Staff Top Uniform', quantity: 100, size: 'XL' },
+            { id: 41, productName: 'Staff Top Uniform', quantity: 100, size: 'XXL' },
+            { id: 42, productName: 'Staff Top Uniform', quantity: 100, size: 'XXXL' },
+            { id: 43, productName: 'Staff Slacks', quantity: 100, size: 'S' },
+            { id: 44, productName: 'Staff Slacks', quantity: 100, size: 'M' },
+            { id: 45, productName: 'Staff Slacks', quantity: 100, size: 'L' },
+            { id: 46, productName: 'Staff Slacks', quantity: 100, size: 'XL' },
+            { id: 47, productName: 'Staff Slacks', quantity: 100, size: 'XXL' },
+            { id: 48, productName: 'Staff Slacks', quantity: 100, size: 'XXXL' },
+            { id: 49, productName: 'ID Lace', quantity: 100, size: '' },
+        ];
+
+        function populateTable(data, tableBody) {
+            tableBody.innerHTML = '';
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.id}</td>
+                    <td>${item.name || item.productName}</td>
+                    <td>${item.email || item.price || item.quantity}</td>
+                    <td>${item.password || item.size || ''}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        populateTable(accounts, accountsTableBody);
+        populateTable(products, productsTableBody);
+        populateTable(inventory, inventoryTableBody);
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('.section');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetSection = document.querySelector(link.getAttribute('href'));
+
+                sections.forEach(section => {
+                    section.classList.add('hidden');
+                });
+
+                targetSection.classList.remove('hidden');
+            });
+        });
+    });
+</script>
